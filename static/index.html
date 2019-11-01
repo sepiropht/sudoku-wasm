@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Rust + Webpack project!</title>
+  </head>
+  <body>
+    	<div class="wrap">
+          <h1>SudokuJS demo with board generation</h1>
+      
+          <!--show candidates toggle-->
+          <label for="toggleCandidates">Show candidates </label><input id="toggleCandidates" class="js-candidate-toggle" type="checkbox"/>
+          <!--genrate board btns-->
+          New:
+          <button type="button" class="js-generate-board-btn--easy">Easy</button>
+          <button type="button" class="js-generate-board-btn--medium">Medium</button>
+          <button type="button" class="js-generate-board-btn--hard">Hard</button>
+          <button type="button" class="js-generate-board-btn--very-hard">Very Hard</button>
+      
+      
+          <!--the only required html-->
+          <div id="sudoku" class="sudoku-board">
+          </div>
+      
+          <!--solve buttons-->
+          Solve: <button type="button" class="js-solve-step-btn">One Step</button><button type="button" class="js-solve-all-btn">All</button>
+          <br>
+          <!--clear board btn-->
+          Clear: <button type="button" class="js-clear-board-btn">Board</button>
+        </div>
+    <script src="index.js"></script>
+  </body>
+</html>
